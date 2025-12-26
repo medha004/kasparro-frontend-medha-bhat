@@ -1,0 +1,40 @@
+{
+  "brandId": "brand-1",
+  "aiVisibilityScore": 78,
+  "trustScore": 72,
+  "keywordCoverage": 65,
+  "lastAuditDate": "2024-12-20T10:00:00Z",
+  "overallHealth": "good",
+  "trendsData": [
+    {
+      "date": "2024-11-20",
+      "aiVisibilityScore": 72,
+      "trustScore": 68,
+      "keywordCoverage": 60
+    },
+    {
+      "date": "2024-11-27",
+      "aiVisibilityScore": 74,
+      "trustScore": 69,
+      "keywordCoverage": 62
+    },
+    {
+      "date": "2024-12-04",
+      "aiVisibilityScore": 75,
+      "trustScore": 70,
+      "keywordCoverage": 63
+    },
+    {
+      "date": "2024-12-11",
+      "aiVisibilityScore": 76,
+      "trustScore": 71,
+      "keywordCoverage": 64
+    },
+    {
+      "date": "2024-12-20",
+      "aiVisibilityScore": 78,
+      "trustScore": 72,
+      "keywordCoverage": 65
+    }
+  ]
+}

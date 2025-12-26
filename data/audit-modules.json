@@ -1,0 +1,345 @@
+[
+  {
+    "id": "ai-visibility",
+    "name": "AI Visibility",
+    "description": "Measures how often your brand appears in AI-generated responses across major LLMs",
+    "score": 78,
+    "maxScore": 100,
+    "status": "good",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-1",
+        "title": "Strong presence in ChatGPT responses",
+        "description": "Your brand appears in 78% of relevant queries on ChatGPT, significantly above industry average of 45%",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-2",
+        "title": "Limited visibility on Perplexity",
+        "description": "Only 32% mention rate on Perplexity for industry-related queries",
+        "type": "negative",
+        "impact": "medium"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-1",
+        "title": "Missing from product comparison queries",
+        "description": "Brand not mentioned in 65% of product comparison queries despite market position",
+        "severity": "high",
+        "category": "Visibility Gap"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-1",
+        "title": "Optimize content for comparison contexts",
+        "description": "Create detailed comparison content that positions your products against competitors",
+        "priority": "high",
+        "estimatedImpact": "+15% visibility in comparison queries",
+        "actionItems": [
+          "Create comprehensive product comparison pages",
+          "Add structured data markup for product features",
+          "Develop use-case specific content"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "brand-voice",
+    "name": "Brand Voice & Consistency",
+    "description": "Analyzes how consistently your brand message appears across AI platforms",
+    "score": 85,
+    "maxScore": 100,
+    "status": "excellent",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-3",
+        "title": "Consistent messaging across platforms",
+        "description": "85% consistency in how AI models describe your brand value proposition",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-4",
+        "title": "Strong brand differentiation",
+        "description": "AI models clearly distinguish your brand from competitors in 9/10 queries",
+        "type": "positive",
+        "impact": "high"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-2",
+        "title": "Outdated product descriptions in some responses",
+        "description": "15% of AI responses reference discontinued products or old features",
+        "severity": "medium",
+        "category": "Content Accuracy"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-2",
+        "title": "Update product documentation",
+        "description": "Ensure all public-facing documentation reflects current product lineup",
+        "priority": "medium",
+        "estimatedImpact": "Improved accuracy in AI responses",
+        "actionItems": [
+          "Audit all product pages for accuracy",
+          "Update press releases and announcements",
+          "Submit updated sitemaps to search engines"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eeat-trust",
+    "name": "E-E-A-T & Trust Signals",
+    "description": "Evaluates expertise, experience, authoritativeness, and trustworthiness signals",
+    "score": 72,
+    "maxScore": 100,
+    "status": "good",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-5",
+        "title": "Strong expertise signals detected",
+        "description": "Content demonstrates deep domain knowledge in 82% of analyzed pages",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-6",
+        "title": "Limited author credentials",
+        "description": "Only 45% of content has clear author attribution with credentials",
+        "type": "negative",
+        "impact": "medium"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-3",
+        "title": "Weak citation network",
+        "description": "Limited external citations to authoritative sources in key content pieces",
+        "severity": "medium",
+        "category": "Authority"
+      },
+      {
+        "id": "iss-4",
+        "title": "Missing trust indicators",
+        "description": "Lack of security badges, certifications, and trust seals on critical pages",
+        "severity": "high",
+        "category": "Trust"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-3",
+        "title": "Implement comprehensive author attribution",
+        "description": "Add detailed author bios with credentials to all content pages",
+        "priority": "high",
+        "estimatedImpact": "+12% trust score improvement",
+        "actionItems": [
+          "Create author profile pages",
+          "Add schema markup for authors",
+          "Display credentials and expertise prominently"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "keyword-coverage",
+    "name": "Non-Branded Keyword Coverage",
+    "description": "Measures visibility for industry terms and non-branded search queries",
+    "score": 65,
+    "maxScore": 100,
+    "status": "needs-improvement",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-7",
+        "title": "Strong coverage in core category",
+        "description": "Ranking for 78% of primary category keywords",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-8",
+        "title": "Gaps in emerging topics",
+        "description": "Missing from 60% of trending industry keywords from the last 6 months",
+        "type": "negative",
+        "impact": "high"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-5",
+        "title": "Weak long-tail keyword presence",
+        "description": "Capturing only 35% of available long-tail keyword opportunities",
+        "severity": "high",
+        "category": "Coverage Gap"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-4",
+        "title": "Develop content for emerging topics",
+        "description": "Create authoritative content addressing new industry trends and technologies",
+        "priority": "high",
+        "estimatedImpact": "+20% keyword coverage",
+        "actionItems": [
+          "Research trending industry topics",
+          "Create comprehensive guides and tutorials",
+          "Optimize for question-based queries"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "content-depth",
+    "name": "Content Depth & Quality",
+    "description": "Assesses the comprehensiveness and quality of content across your domain",
+    "score": 88,
+    "maxScore": 100,
+    "status": "excellent",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-9",
+        "title": "Excellent content depth",
+        "description": "Average content depth score of 88/100 across key pages",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-10",
+        "title": "High engagement signals",
+        "description": "Content shows strong user engagement metrics indicating quality",
+        "type": "positive",
+        "impact": "medium"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-6",
+        "title": "Some thin content pages",
+        "description": "12% of pages have insufficient content depth for their topic",
+        "severity": "low",
+        "category": "Content Quality"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-5",
+        "title": "Expand thin content pages",
+        "description": "Enhance pages with insufficient depth to match user intent",
+        "priority": "low",
+        "estimatedImpact": "Improved content coverage",
+        "actionItems": [
+          "Identify and audit thin pages",
+          "Add comprehensive information and examples",
+          "Include multimedia content where relevant"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "citations",
+    "name": "Citations & References",
+    "description": "Tracks how often your brand is cited and referenced by authoritative sources",
+    "score": 70,
+    "maxScore": 100,
+    "status": "good",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-11",
+        "title": "Growing citation network",
+        "description": "25% increase in citations from authoritative sources over last quarter",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-12",
+        "title": "Strong industry publication presence",
+        "description": "Featured in 8 of top 10 industry publications",
+        "type": "positive",
+        "impact": "high"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-7",
+        "title": "Limited academic citations",
+        "description": "Low presence in academic papers and research",
+        "severity": "medium",
+        "category": "Authority"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-6",
+        "title": "Build academic partnerships",
+        "description": "Engage with academic institutions to increase research citations",
+        "priority": "medium",
+        "estimatedImpact": "Stronger authority signals",
+        "actionItems": [
+          "Sponsor or participate in research studies",
+          "Publish white papers and research findings",
+          "Partner with universities on case studies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "competitive-position",
+    "name": "Competitive Position",
+    "description": "Analyzes your position relative to competitors in AI-generated responses",
+    "score": 74,
+    "maxScore": 100,
+    "status": "good",
+    "lastUpdated": "2024-12-20T10:00:00Z",
+    "insights": [
+      {
+        "id": "ins-13",
+        "title": "Top 3 positioning in category",
+        "description": "Consistently ranked in top 3 when AI models list category leaders",
+        "type": "positive",
+        "impact": "high"
+      },
+      {
+        "id": "ins-14",
+        "title": "Strong differentiation",
+        "description": "Unique value propositions clearly communicated in 85% of mentions",
+        "type": "positive",
+        "impact": "medium"
+      }
+    ],
+    "issues": [
+      {
+        "id": "iss-8",
+        "title": "Competitor outperforms in specific queries",
+        "description": "Main competitor mentioned more frequently in 45% of feature-specific queries",
+        "severity": "medium",
+        "category": "Competitive Gap"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "rec-7",
+        "title": "Strengthen feature-specific content",
+        "description": "Create detailed content around key features where competitors currently lead",
+        "priority": "high",
+        "estimatedImpact": "Improved competitive positioning",
+        "actionItems": [
+          "Analyze competitor content strategies",
+          "Develop feature comparison matrices",
+          "Create use-case specific success stories"
+        ]
+      }
+    ]
+  }
+]

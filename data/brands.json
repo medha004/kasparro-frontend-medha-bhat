@@ -1,0 +1,20 @@
+[
+  {
+    "id": "brand-1",
+    "name": "TechCorp",
+    "domain": "techcorp.com",
+    "createdAt": "2024-01-15T10:00:00Z"
+  },
+  {
+    "id": "brand-2",
+    "name": "HealthPlus",
+    "domain": "healthplus.io",
+    "createdAt": "2024-02-20T14:30:00Z"
+  },
+  {
+    "id": "brand-3",
+    "name": "EcoGreen Solutions",
+    "domain": "ecogreen.co",
+    "createdAt": "2024-03-10T09:15:00Z"
+  }
+]

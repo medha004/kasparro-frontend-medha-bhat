@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode disabled for now to ensure proper text visibility */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: #000000 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure all headings are visible with maximum specificity */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
+}
+
+/* Additional specificity for card titles and all heading variants */
+.text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-xl {
+  color: inherit !important;
+}

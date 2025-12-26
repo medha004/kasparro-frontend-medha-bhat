@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "id": "input-assembler",
+      "name": "Input Assembler",
+      "type": "input",
+      "description": "Collects and validates brand data, domain information, and audit parameters",
+      "connections": ["context-pack"],
+      "status": "active"
+    },
+    {
+      "id": "context-pack",
+      "name": "Context Pack",
+      "type": "processor",
+      "description": "Aggregates contextual data from multiple sources including web crawl, social signals, and historical data",
+      "connections": [
+        "ai-visibility-module",
+        "brand-voice-module",
+        "eeat-module",
+        "keyword-module",
+        "content-module",
+        "citations-module",
+        "competitive-module"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "ai-visibility-module",
+      "name": "AI Visibility Module",
+      "type": "module",
+      "description": "Queries major LLMs to measure brand appearance frequency and context",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "brand-voice-module",
+      "name": "Brand Voice Module",
+      "type": "module",
+      "description": "Analyzes consistency of brand messaging across AI platforms",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "eeat-module",
+      "name": "E-E-A-T Module",
+      "type": "module",
+      "description": "Evaluates expertise, experience, authoritativeness, and trustworthiness signals",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "keyword-module",
+      "name": "Keyword Coverage Module",
+      "type": "module",
+      "description": "Measures visibility for non-branded industry terms across AI platforms",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "content-module",
+      "name": "Content Depth Module",
+      "type": "module",
+      "description": "Assesses comprehensiveness and quality of brand content",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "citations-module",
+      "name": "Citations Module",
+      "type": "module",
+      "description": "Tracks brand citations and references from authoritative sources",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "competitive-module",
+      "name": "Competitive Position Module",
+      "type": "module",
+      "description": "Analyzes brand position relative to competitors in AI responses",
+      "connections": ["output-aggregator"],
+      "status": "active"
+    },
+    {
+      "id": "output-aggregator",
+      "name": "Output Aggregator",
+      "type": "output",
+      "description": "Consolidates insights, generates recommendations, and produces dashboard visualizations",
+      "connections": [],
+      "status": "active"
+    }
+  ],
+  "pipeline": {
+    "stages": [
+      {
+        "id": "stage-1",
+        "name": "Data Collection",
+        "description": "Gather brand information and establish audit parameters",
+        "components": ["input-assembler"],
+        "order": 1
+      },
+      {
+        "id": "stage-2",
+        "name": "Context Building",
+        "description": "Aggregate contextual data from multiple sources",
+        "components": ["context-pack"],
+        "order": 2
+      },
+      {
+        "id": "stage-3",
+        "name": "Module Execution",
+        "description": "Run parallel audit modules across 7 dimensions",
+        "components": [
+          "ai-visibility-module",
+          "brand-voice-module",
+          "eeat-module",
+          "keyword-module",
+          "content-module",
+          "citations-module",
+          "competitive-module"
+        ],
+        "order": 3
+      },
+      {
+        "id": "stage-4",
+        "name": "Results Synthesis",
+        "description": "Consolidate findings and generate actionable insights",
+        "components": ["output-aggregator"],
+        "order": 4
+      }
+    ]
+  }
+}
