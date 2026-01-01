@@ -1,9 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { LayoutDashboard, FileSearch, Network } from "lucide-react";
+import { useAppStore } from "@/store/useAppStore";
 
 const navigation = [
   { name: "Dashboard", href: "/app/dashboard", icon: LayoutDashboard },
@@ -13,16 +15,35 @@ const navigation = [
 
 export function DashboardSidebar() {
   const pathname = usePathname();
+  const isSidebarOpen = useAppStore((state) => state.isSidebarOpen);
+  const closeSidebar = useAppStore((state) => state.closeSidebar);
+
+  // Debug: Log when sidebar state changes
+  useEffect(() => {
+    console.log('Sidebar state changed:', isSidebarOpen);
+  }, [isSidebarOpen]);
+
+  // Close sidebar on Escape key press
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isSidebarOpen) {
+        closeSidebar();
+      }
+    };
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isSidebarOpen, closeSidebar]);
+
 
   return (
-    <aside className="fixed left-0 top-0 bottom-0 w-64 border-r border-gray-200 bg-white">
-      <div className="flex flex-col h-full">
-        <div className="flex h-16 items-center border-b border-gray-200 px-6">
-          <Link href="/" className="text-xl font-bold">
-            Kasparro
-          </Link>
-        </div>
-
+    <aside
+      className={cn(
+        "border-r border-gray-200 bg-white transition-all duration-300 ease-in-out overflow-hidden",
+        isSidebarOpen ? "w-64" : "w-0"
+      )}
+    >
+      <div className="flex flex-col h-full w-64">
         <nav className="flex-1 space-y-1 px-3 py-4">
           {navigation.map((item) => {
             const isActive = pathname === item.href;
@@ -45,7 +66,10 @@ export function DashboardSidebar() {
         </nav>
 
         <div className="border-t border-gray-200 p-4">
-          <Link href="/" className="text-sm text-gray-600 hover:text-gray-900">
+          <Link
+            href="/"
+            className="text-sm text-gray-600 hover:text-gray-900"
+          >
             ← Back to Website
           </Link>
         </div>
